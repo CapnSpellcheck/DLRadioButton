@@ -48,6 +48,7 @@ static BOOL _groupModifing = NO;
 - (void)setIconSelected:(UIImage *)iconSelected {
     _iconSelected = iconSelected;
     [self setImage:self.iconSelected forState:UIControlStateSelected];
+    [self setImage:self.iconSelected forState:UIControlStateSelected | UIControlStateDisabled];
     [self setImage:self.iconSelected forState:UIControlStateSelected | UIControlStateHighlighted];
 }
 
